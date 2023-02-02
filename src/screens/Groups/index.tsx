@@ -1,20 +1,14 @@
-// import { View, Text, StyleSheet } from "react-native";
+import { GroupCard } from "@components/GroupCard";
 import { Header } from "@components/Header";
+import { Highlight } from "@components/Highlight";
 import { Container } from "./styles";
 
 export function Groups() {
   return (
     <Container>
-      <Header />
+      <Header showBackButton />
+      <Highlight title="Turmas" subtitle="Jogue com a sua turma" />
+      <GroupCard groupName="Gmill" />
     </Container>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff",
-//     alignItems: "center",
-//     justifyContent: "center",
-//   },
-// });

@@ -1,0 +1,1 @@
+// Caso esteja usando Yarn não é override e sim resolutions.
