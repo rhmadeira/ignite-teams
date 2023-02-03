@@ -1,4 +1,4 @@
-import { Groups } from "@screens/Groups";
+import { NewGroup } from "@screens/NewGroup";
 import { StatusBar } from "react-native";
 import theme from "./src/theme"; //Irei usar o tema somente nesse arquivo
 import { ThemeProvider } from "styled-components";
@@ -27,7 +27,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent //para o statusbar ficar por cima do conteúdo
       />
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <NewGroup /> : <Loading />}
     </ThemeProvider>
   );
 }
