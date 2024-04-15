@@ -1,5 +1,5 @@
 {
-  "name": "igniteteams",
+  "name": "ignite-teams",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "babel-plugin-module-resolver": "^5.0.0",
     "typescript": "^4.6.3"
   },
-  "override":{
+  "override": {
     "@types/react": "~18.0.14"
   },
   "private": true
