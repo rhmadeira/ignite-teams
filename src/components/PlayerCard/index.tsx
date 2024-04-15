@@ -13,7 +13,7 @@ export function PlayerCard({ name, onRemove }: Props) {
       <Icon 
         name="person" 
       />
-
+      
       <Name>
         {name}
       </Name>

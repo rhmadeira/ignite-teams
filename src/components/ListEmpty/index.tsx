@@ -1,13 +1,13 @@
-import { Container, Mensage } from "./styles";
+import { Container, Message } from "./styles";
 
-type ListEmptyProps = {
-  mensage: string;
-};
+type Props = {
+  message: string;
+}
 
-export function ListEmpty({ mensage }: ListEmptyProps) {
+export function ListEmpty({ message }: Props) {
   return (
     <Container>
-      <Mensage>{mensage}</Mensage>
+      <Message>{message}</Message>
     </Container>
-  );
+  )
 }

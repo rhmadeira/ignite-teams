@@ -3,6 +3,7 @@ import { CaretLeft } from "phosphor-react-native";
 
 export const Container = styled.View`
   width: 100%;
+
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -10,14 +11,14 @@ export const Container = styled.View`
 
 export const Logo = styled.Image`
   width: 46px;
-  height: 56px;
+  height: 55px;
 `;
 
 export const BackButton = styled.TouchableOpacity`
   flex: 1;
-`; //tornar o botão clicável
+`;
 
 export const BackIcon = styled(CaretLeft).attrs(({ theme }) => ({
-  color: theme.COLORS.GRAY_100,
-  size: 32,
+  size: 36,
+  color: theme.COLORS.WHITE
 }))``;
