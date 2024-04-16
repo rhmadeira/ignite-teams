@@ -1,8 +1,19 @@
 {
   "expo": {
-    "name": "igniteteams",
-    "slug": "igniteteams",
+    "name": "ignite-teams",
+    "slug": "ignite-teams",
     "version": "1.0.0",
+
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+
+    "experiments": {
+      "tsconfigPaths": true
+    },
+
+    "plugins": [],
+
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,24 +22,15 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.anonymous.igniteteams"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+        "backgroundColor": "#ffffff"
+      }
     }
   }
 }
