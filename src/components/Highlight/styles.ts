@@ -7,6 +7,7 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   text-align: center;
+
   ${({ theme }) => css`
     font-size: ${theme.FONT_SIZE.XL}px;
     font-family: ${theme.FONT_FAMILY.BOLD};
@@ -16,6 +17,7 @@ export const Title = styled.Text`
 
 export const Subtitle = styled.Text`
   text-align: center;
+
   ${({ theme }) => css`
     font-size: ${theme.FONT_SIZE.MD}px;
     font-family: ${theme.FONT_FAMILY.REGULAR};
