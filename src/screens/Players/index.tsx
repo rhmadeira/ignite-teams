@@ -8,7 +8,7 @@ import { styles } from './styles';
 import { ButtonIcon } from '@/components/ButtonIcon';
 import { Filter } from '@/components/Filter';
 import Header from '@/components/Header';
-import HighLight from '@/components/HighLight';
+import Highlight from '@/components/Highlight';
 import { Input } from '@/components/Input';
 import ListEmpty from '@/components/ListEmpty';
 import Loading from '@/components/Loading';
@@ -113,7 +113,7 @@ export function Players() {
     <SafeAreaView style={styles.container}>
       <Header showBackButton />
 
-      <HighLight title={group} subtitle="adicione a galera e separe os times" />
+      <Highlight title={group} subtitle="adicione a galera e separe os times" />
 
       <View style={styles.form}>
         <Input

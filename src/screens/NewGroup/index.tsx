@@ -7,7 +7,7 @@ import { styles } from './styles';
 
 import Button from '@/components/Button';
 import Header from '@/components/Header';
-import HighLight from '@/components/HighLight';
+import Highlight from '@/components/Highlight';
 import { Input } from '@/components/Input';
 import { AppError } from '@/utils/AppError';
 
@@ -41,7 +41,7 @@ export function NewGroup() {
 
       <View style={styles.content}>
         <FontAwesome name="users" size={56} color="#00FF00" style={styles.icon} />
-        <HighLight title="Nova turma" subtitle="crie a turma para adicionar as pessoas" />
+        <Highlight title="Nova turma" subtitle="crie a turma para adicionar as pessoas" />
 
         <Input placeholder="Nome da turma" onChangeText={setGroup} />
 

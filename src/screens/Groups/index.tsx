@@ -9,12 +9,12 @@ import { styles } from './styles';
 import Button from '@/components/Button';
 import { GroupCard } from '@/components/GroupCard';
 import Header from '@/components/Header';
-import HighLight from '@/components/HighLight';
+import Highlight from '@/components/Highlight';
 import ListEmpty from '@/components/ListEmpty';
 import Loading from '@/components/Loading';
 
 export function Groups() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [groups, setGroups] = useState<string[]>([]);
 
   const navigation = useNavigation();
@@ -49,7 +49,7 @@ export function Groups() {
   return (
     <SafeAreaView style={styles.container}>
       <Header />
-      <HighLight title="Turmas" subtitle="jogue com sua turma" />
+      <Highlight title="Turmas" subtitle="jogue com sua turma" />
       {isLoading ? (
         <Loading />
       ) : (
