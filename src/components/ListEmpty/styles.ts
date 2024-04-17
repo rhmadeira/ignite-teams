@@ -3,14 +3,13 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#333',
-    padding: 24,
-  },
-  content: {
-    flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
   },
-  icon: {
-    alignSelf: 'center',
+  text: {
+    textAlign: 'center',
+    fontSize: 16,
+    fontFamily: 'Poppins-Regular',
+    color: '#7A7A80',
   },
 });

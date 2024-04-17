@@ -1,35 +1,27 @@
-import { SafeAreaView } from 'react-native-safe-area-context'
-import styled, { css } from "styled-components/native";
+import { StyleSheet } from 'react-native';
 
-export const Container = styled(SafeAreaView)`
-  flex: 1;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_600};
-
-  padding: 24px;
-`;
-
-export const Form = styled.View`
-  width: 100%;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_700};
-  
-  flex-direction: row;
-  justify-content: center;
-
-  border-radius: 6px;
-`;
-
-export const HeaderList = styled.View`
-  width: 100%;
-
-  flex-direction: row;
-  align-items: center;
-  margin: 32px 0 12px;
-`;
-
-export const NumberOfPlayers = styled.Text`
-  ${({ theme }) => css`
-    color: ${theme.COLORS.GRAY_200};
-    font-family: ${theme.FONT_FAMILY.BOLD};
-    font-size: ${theme.FONT_SIZE.SM}px;
-  `};
-`;
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#1F1F1F',
+    padding: 24,
+  },
+  form: {
+    width: '100%',
+    backgroundColor: '#383838',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    borderRadius: 6,
+  },
+  headerList: {
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    margin: 32,
+  },
+  numberOfPlayers: {
+    color: '#B3B3B3',
+    fontFamily: 'Poppins_700Bold',
+    fontSize: 12,
+  },
+});

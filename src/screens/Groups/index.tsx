@@ -1,15 +1,16 @@
-import { GroupCard } from '@components/GroupCard';
-import { ListEmpty } from '@components/ListEmpty';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 // import { groupsGetAll } from '@storage/group/groupsGetAll';
 import { useState, useCallback } from 'react';
 import { Alert, FlatList, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { styles } from './styles';
 
 import Button from '@/components/Button';
+import { GroupCard } from '@/components/GroupCard';
 import Header from '@/components/Header';
-import Highlight from '@/components/Highlight';
+import HighLight from '@/components/HighLight';
+import ListEmpty from '@/components/ListEmpty';
 import Loading from '@/components/Loading';
 
 export function Groups() {
@@ -22,33 +23,33 @@ export function Groups() {
     navigation.navigate('new');
   }
 
-  async function fetchGroups() {
-    try {
-      setIsLoading(true);
-      const data = await groupsGetAll();
-      setGroups(data);
-    } catch (error) {
-      Alert.alert('Turmas', 'Não foi possível carregar as turmas');
-      console.log(error);
-    } finally {
-      setIsLoading(false);
-    }
-  }
+  // async function fetchGroups() {
+  //   try {
+  //     setIsLoading(true);
+  //     const data = await groupsGetAll();
+  //     setGroups(data);
+  //   } catch (error) {
+  //     Alert.alert('Turmas', 'Não foi possível carregar as turmas');
+  //     console.log(error);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // }
 
   function handleOpenGroup(group: string) {
     navigation.navigate('players', { group });
   }
 
-  useFocusEffect(
-    useCallback(() => {
-      fetchGroups();
-    }, [])
-  );
+  // useFocusEffect(
+  //   useCallback(() => {
+  //     fetchGroups();
+  //   }, [])
+  // );
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Header />
-      <Highlight title="Turmas" subtitle="jogue com sua turma" />
+      <HighLight title="Turmas" subtitle="jogue com sua turma" />
       {isLoading ? (
         <Loading />
       ) : (
@@ -64,6 +65,6 @@ export function Groups() {
       )}
 
       <Button title="Criar nova turma" onPress={handleNewGroup} />
-    </View>
+    </SafeAreaView>
   );
 }

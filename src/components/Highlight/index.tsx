@@ -7,7 +7,7 @@ type Props = {
   subtitle: string;
 };
 
-export default function Highlight({ title, subtitle }: Props) {
+export default function HighLight({ title, subtitle }: Props) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
