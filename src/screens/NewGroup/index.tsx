@@ -9,6 +9,7 @@ import Button from '@/components/Button';
 import Header from '@/components/Header';
 import Highlight from '@/components/Highlight';
 import { Input } from '@/components/Input';
+import theme from '@/theme';
 import { AppError } from '@/utils/AppError';
 
 export function NewGroup() {
@@ -40,12 +41,14 @@ export function NewGroup() {
       <Header showBackButton />
 
       <View style={styles.content}>
-        <FontAwesome name="users" size={56} color="#00FF00" style={styles.icon} />
+        <FontAwesome name="users" size={56} color={theme.COLORS.GREEN_700} style={styles.icon} />
         <Highlight title="Nova turma" subtitle="crie a turma para adicionar as pessoas" />
 
         <Input placeholder="Nome da turma" onChangeText={setGroup} />
 
-        <Button title="Criar" style={{ marginTop: 20 }} onPress={handleNew} />
+        <View style={{ marginTop: 20 }}>
+          <Button title="Criar" onPress={handleNew} />
+        </View>
       </View>
     </SafeAreaView>
   );

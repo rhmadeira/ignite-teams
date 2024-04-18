@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+import theme from '@/theme';
+
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -8,8 +10,8 @@ export const styles = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
-    fontSize: 16,
-    fontFamily: 'Poppins-Regular',
-    color: '#7A7A80',
+    fontSize: theme.FONT_SIZE.SM,
+    fontFamily: theme.FONT_FAMILY.REGULAR,
+    color: theme.COLORS.GRAY_300,
   },
 });

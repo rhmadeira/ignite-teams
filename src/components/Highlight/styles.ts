@@ -1,20 +1,23 @@
 import { StyleSheet } from 'react-native';
 
+import theme from '@/theme';
+
 export const styles = StyleSheet.create({
   container: {
     width: '100%',
-    margin: 32,
+    marginTop: 8,
+    marginBottom: 8,
   },
   title: {
     textAlign: 'center',
-    fontSize: 32,
-    fontFamily: 'Poppins_600SemiBold',
-    color: '#fff',
+    fontSize: theme.FONT_SIZE.XL,
+    fontFamily: theme.FONT_FAMILY.BOLD,
+    color: theme.COLORS.WHITE,
   },
   subtitle: {
     textAlign: 'center',
-    fontSize: 16,
-    fontFamily: 'Poppins_400Regular',
-    color: '#d4c2ff',
+    fontSize: theme.FONT_SIZE.MD,
+    fontFamily: theme.FONT_FAMILY.REGULAR,
+    color: theme.COLORS.GRAY_300,
   },
 });
